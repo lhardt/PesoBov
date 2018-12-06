@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/prim_dark</item>
+        <item name="colorAccent">@color/secondary</item>
+    </style>
+
+    <!-- TODO: rename theme. -->
+    <style name="lightTheme" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/prim_dark</item>
+        <item name="colorAccent">@color/secondary</item>
+    </style>
+</resources>

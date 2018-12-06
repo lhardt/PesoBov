@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_gradient"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddWeightingForCow">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview_add_cow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        android:paddingHorizontal="25dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Pesar"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Base.DialogWindowTitle.AppCompat"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/add_weight_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:hint="@string/weight_kg"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <Switch
+                    android:id="@+id/add_weight_switch"
+                    android:text="@string/weighted_today"
+                    android:paddingTop="15dp"
+                    android:onClick="onSwitch"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/add_weight_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingTop="15dp"
+                    android:hint="@string/weight_date"
+                    android:visibility="gone"
+                    android:ems="10"
+                    android:inputType="date" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitWeighting"
+        app:layout_anchor="@id/cardview_add_cow"
+        android:layout_marginRight="32dp"
+        app:layout_anchorGravity="right|end|bottom"
+        android:src="@drawable/ic_send_black_24dp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

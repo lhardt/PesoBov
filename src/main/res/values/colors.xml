@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="prim_light">#3b598c</color>
+    <color name="primary">#183c78</color>
+    <color name="prim_dark">#052355</color>
+    <color name="background_darkest">#081A48</color>
+    <color name="background_lightest">#0E275B</color>
+    <color name="secondary">#d50d1f</color>
+    <color name="white">#ffffff</color>
+    <color name="text_splash">#888</color>
+    <color name="black">#000000</color>
+</resources>

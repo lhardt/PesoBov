@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Peso Bovino</string>
+    <!-- MM maiúsculo. Caso contrário, interpreta como minuto. -->
+    <string name="date_format">dd/MM/yyyy</string>
+    <string name="action_settings">Configurações</string>
+    <string name="pdf_export">Exportar para PDF</string>
+    <string name="cows_tab">Gado</string>
+    <string name="vaccines_tab">Vacinar</string>
+    <string name="weightings_tab">Pesar</string>
+    <string name="weight_kg">Peso (kg)</string>
+    <string name="vaccine">Vacina</string>
+    <string name="insert_weighting">Pesar</string>
+    <string name="insert_vaccine">Vacinar</string>
+    <string name="cow_id">Id. do Gado</string>
+    <string name="vacc_name">Nome da vacina</string>
+    <string name="vacc_today">Vacinado hoje?</string>
+    <string name="weighted_today">Pesado hoje?</string>
+    <string name="vacc_date">Data da Vacinação (dd/mm/aaaa)</string>
+    <string name="weight_date">Data da Pesgem</string>
+    <string name="success">Sucesso!</string>
+    <string name="wrong_date">Data não foi informada corretamente</string>
+    <string name="insert_all_data">Insira todos os dados!</string>
+
+    <string name="dialog_error_title">Erro!</string>
+    <string name="dialog_date_parse_error_desc">Data não foi informada correntamente!</string>
+    <string name="birthdate">Data de Nascimeto</string>
+    <string name="unknown_birthdate">Data de Nascimento desconhecida?</string>
+    <string name="vaccines">Vacinas:</string>
+    <string name="weightings">Pesagens:</string>
+    <string name="remove">Remover</string>
+</resources>

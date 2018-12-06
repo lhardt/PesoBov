@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_gradient"
+    android:layout_height="match_parent"
+    tools:context=".AddCowActivity">
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview_add_cow"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardElevation="4dp"
+        android:paddingHorizontal="25dp"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Adicionar Gado"
+                android:background="@color/primary"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/Base.DialogWindowTitle.AppCompat"/>
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/cow_id_edittext"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginVertical="3dp"
+                    android:hint="@string/cow_id" />
+                <Switch
+                    android:id="@+id/birth_unknown_switch"
+                    android:text="@string/unknown_birthdate"
+                    android:paddingTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:onClick="onSwitch"
+                    android:checked="true"
+                    android:layout_marginVertical="3dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:id="@+id/cow_birth_edittext"
+                    android:inputType="date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="3dp"
+                    android:visibility="gone"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/birthdate"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="submitCow"
+        app:layout_anchor="@id/cardview_add_cow"
+        android:layout_marginRight="32dp"
+        app:layout_anchorGravity="right|end|bottom"
+        android:src="@drawable/ic_send_black_24dp" />
+</android.support.design.widget.CoordinatorLayout>
